@@ -34,6 +34,6 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "Health",
   "secondaryTokenAttribute": "Health",
-  "manifest": "?",
-  "download": "?"
+  "manifest": "https://raw.githubusercontent.com/rpdobson123/foundryvtt-pokemon-tabletop-adventures-3/main/system.json",
+  "download": "PLACEHOLDER"
 }
