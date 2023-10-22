@@ -3,49 +3,122 @@
   /* Items List */
   /* Attributes */
 }
+.worldbuilding .borderless {
+  border: none;
+}
 .worldbuilding .window-content {
   height: 100%;
   padding: 5px;
   overflow-y: hidden;
 }
-.worldbuilding form {
+.worldbuilding form.pokemon-sheet {
   height: 100%;
-}
-.worldbuilding .sheet-header {
-  flex: 0 0 100px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-bottom: 10px;
-}
-.borderless {
-  border: none;
-}
-.worldbuilding .sheet-header .profile-img {
-  flex: 0 0 100px;
-  height: 100px;
-  margin-right: 10px;
-}
-.worldbuilding .sheet-header .header-fields {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-rows: 130px 65px auto;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+}
+.worldbuilding.sheet.actor header.sheet-header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
   grid-gap: 10px;
   flex: 1;
   height: 100px;
 }
-.worldbuilding .sheet-header h1.charname {
+.worldbuilding.sheet.actor header.sheet-header .image-preview-wrapper {
+  display: grid;
+  grid-template-rows: 30px auto;
+}
+.worldbuilding.sheet.actor header.sheet-header .image-preview-wrapper .profile-img {
+  height: 100px;
+  margin: auto 24px auto auto;
+}
+.worldbuilding.sheet.actor header.sheet-header .header-fields {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0 20px;
+}
+.worldbuilding.sheet.actor header.sheet-header .header-fields .charname {
   grid-column: span 2;
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.worldbuilding .sheet-header h1.charname input {
+.worldbuilding.sheet.actor header.sheet-header .header-fields .charname input {
   width: 100%;
   height: 100%;
   margin: 0;
+}
+.worldbuilding.sheet.actor header.sheet-header .header-fields .value-wrapper {
+  display: grid;
+  grid-template-columns: 30px 40px 10px 40px;
+  place-items: center;
+  width: fit-content;
+}
+.worldbuilding.sheet.actor header.sheet-header .header-fields .value-wrapper.text-input {
+  grid-template-columns: auto auto;
+}
+.worldbuilding .pokedex .wrapper {
+  display: flex;
+  place-content: center;
+  grid-gap: 12px;
+  margin: auto;
+}
+.worldbuilding .pokedex .header-container {
+  display: flex;
+  place-content: center;
+  grid-gap: 12px;
+  margin: auto;
+}
+.worldbuilding .pokedex img {
+  border-radius: 64px;
+  padding: 6px;
+  background: linear-gradient(180deg, #ff0000 0%, #ffffff 67%, #ffffff 100%);
+}
+.worldbuilding .pokedex .pokemon-name {
+  font-weight: bold;
+  font-variant: all-petite-caps;
+  font-family: consolas;
+  letter-spacing: 8px;
+  font-size: 48px;
+  display: inline-flex;
+  line-height: 48px;
+}
+.worldbuilding .pokedex .pokemon-description {
+  width: 100%;
+  font-weight: bold;
+  font-family: monospace;
+  white-space: pre-wrap;
+  background-color: #97eac4;
+  padding: 12px;
+  line-height: 24px;
+}
+.worldbuilding .attribute-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 12px;
+  width: fit-content;
+  margin: 36px auto;
+}
+.worldbuilding .attribute-table .label {
+  font-size: 24px;
+  text-align: right;
+  text-decoration: underline;
+}
+.worldbuilding .attribute-table .value {
+  font-size: 24px;
+  background-color: white;
+  width: 40px;
+  border: 1px solid black;
+  text-align: center;
+}
+.worldbuilding .worldbuilding .attribute-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 12px;
+  width: fit-content;
+  margin: 36px auto;
 }
 .worldbuilding .resource {
   width: 50%;
@@ -58,22 +131,6 @@
   width: 100px;
   height: 28px;
 }
-
-.worldbuilding .value-wrapper {
-  width: 100%;
-  display: grid;
-  grid-template-columns: auto 40px auto 40px;
-}
-
-.worldbuilding .value-wrapper.text-input {
-  grid-template-columns: auto auto;
-}
-.worldbuilding .value-wrapper label {
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-}
-
 .worldbuilding .tabs {
   flex: 0 0 40px;
   border-top: 1px solid #AAA;
@@ -97,66 +154,6 @@
 .worldbuilding .editor,
 .worldbuilding .editor-content {
   height: 100%;
-}
-
-.worldbuilding .pokedex .wrapper {
-  display: flex;
-  place-content: center;
-  grid-gap: 12px;
-  margin: auto;
-}
-
-.worldbuilding .pokedex .header-container {
-  display: flex;
-  place-content: center;
-  grid-gap: 12px;
-  margin: auto;
-}
-.worldbuilding .pokedex img {
-  border-radius: 64px;
-  padding: 6px;
-  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
-}
-.worldbuilding .attribute-table {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-gap: 12px;
-  width: fit-content;
-  margin: 36px auto;
-}
-
-.worldbuilding .attribute-table .label {
-  font-size: 24px;
-  text-align: right;
-  text-decoration: underline;
-}
-
-.worldbuilding .attribute-table .value {
-  font-size: 24px;
-  background-color: white;
-  width: 40px;
-  border: 1px solid black;
-  text-align: center;
-}
-
-.worldbuilding .pokedex .pokemon-name {
-  font-weight: bold;
-  font-variant: all-petite-caps;
-  font-family: consolas;
-  letter-spacing: 8px;
-  font-size: 48px;
-  display: inline-flex;
-  line-height: 48px;
-}
-
-.worldbuilding .pokedex .pokemon-description {
-  width: 100%;
-  font-weight: bold;
-  font-family: monospace;
-  white-space: pre-wrap;
-  background-color: #97eac4;
-  padding: 12px;
-  line-height: 24px;
 }
 .worldbuilding .item-list {
   list-style: none;
