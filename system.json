@@ -1,6 +1,6 @@
 {
   "id": "pokemon-pta3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "PTA 3",
   "url": "https://github.com/rpdobson123",
   "description": "PTA2 made by Richard just for Jesus.",
@@ -35,5 +35,5 @@
   "primaryTokenAttribute": "Health",
   "secondaryTokenAttribute": "Health",
   "manifest": "https://raw.githubusercontent.com/rpdobson123/foundryvtt-pokemon-tabletop-adventures-3/main/system.json",
-  "download": "PLACEHOLDER"
+  "download": "https://github.com/rpdobson123/foundryvtt-pokemon-tabletop-adventures-3/archive/refs/tags/0.0.2.zip"
 }
