@@ -1,0 +1,39 @@
+{
+  "id": "pokemon-pta3",
+  "version": "0.0.1",
+  "title": "PTA 3",
+  "url": "https://github.com/rpdobson123",
+  "description": "PTA2 made by Richard just for Jesus.",
+  "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "Richard Dobson",
+      "url": "https://github.com/rpdobson123"
+    }
+  ],
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "HP",
+  "secondaryTokenAttribute": "Num",
+  "manifest": "?",
+  "download": "?"
+}
