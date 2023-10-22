@@ -2,8 +2,7 @@
 
     {{!-- Sheet Header --}}
     <header class="sheet-header">
-        FISH FISH FISH
-        <img src="C:\Users\RPD\AppData\Local\FoundryVTT\Data\systems\pokemon\system.json"/>
+        <img class="borderless" src="systems/pokemon-pta3/templates/pokemon-logo.webp"/>
         <img class="profile-img" src="{{data.img}}" data-edit="img" title="{{data.name}}" height="200" width="100" />
         <div class="header-fields">
             <h1 class="charname">
@@ -14,12 +13,6 @@
                 <span> / </span>
                 <input type="number" name="system.health.max" value="{{systemData.health.max}}"/>
             </div>
-            <div class="resource">
-                <input type="number" name="system.power.value" value="{{systemData.power.value}}"/>
-                <span> / </span>
-                <input type="number" name="system.power.max" value="{{systemData.power.max}}"/>
-            </div>
-        </div>
     </header>
 
     {{!-- Sheet Tab Navigation --}}
@@ -101,11 +94,11 @@
             </header>
 
             {{!-- Render the attribute list partial. --}}
-            {{> "systems/worldbuilding/templates/parts/sheet-attributes.html" attributes=systemData.ungroupedAttributes dtypes=dtypes}}
+            {{> "systems/pokemon-pta3/templates/parts/sheet-attributes.html" attributes=systemData.ungroupedAttributes dtypes=dtypes}}
 
             {{!-- Render the grouped attributes partial and control. --}}
             <div class="groups">
-                {{> "systems/worldbuilding/templates/parts/sheet-groups.html" attributes=systemData.groupedAttributes groups=systemData.groups dtypes=dtypes}}
+                {{> "systems/pokemon-pta3/templates/parts/sheet-groups.html" attributes=systemData.groupedAttributes groups=systemData.groups dtypes=dtypes}}
 
                 <div class="group-controls flexrow">
                     <input class="group-prefix" type="text" value=""/>

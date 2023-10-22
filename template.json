@@ -4,6 +4,19 @@
   "htmlFields": ["biography"],
   "character": {
     "biography": "",
+    "dexImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png",
+    "pokedexData": {},
+    "bioText": "",
+    "statBlock": {
+      "Atk": 1,
+      "Def": 1,
+      "SpAtk": 1,
+      "SpDef": 1,
+      "Speed": 1
+    },
+    "system": {
+      "pokedexName": "N/A"
+    },
     "health": {
       "value": 10,
       "min": 0,

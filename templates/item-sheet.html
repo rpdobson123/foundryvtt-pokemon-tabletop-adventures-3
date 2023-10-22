@@ -67,11 +67,11 @@
       </header>
 
       {{!-- Render the attribute list partial. --}} {{>
-      "systems/worldbuilding/templates/parts/sheet-attributes.html"
+      "systems/pokemon-pta3/templates/parts/sheet-attributes.html"
       attributes=systemData.ungroupedAttributes dtypes=dtypes}} {{!-- Render the
       grouped attributes partial and control. --}}
       <div class="groups">
-        {{> "systems/worldbuilding/templates/parts/sheet-groups.html"
+        {{> "systems/pokemon-pta3/templates/parts/sheet-groups.html"
         attributes=systemData.groupedAttributes groups=systemData.groups
         dtypes=dtypes}}
         <div class="group-controls flexrow">

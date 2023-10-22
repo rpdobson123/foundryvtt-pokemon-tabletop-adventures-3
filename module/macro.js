@@ -15,7 +15,7 @@ export async function createWorldbuildingMacro(data, slot) {
       name: data.label,
       type: "script",
       command: command,
-      flags: { "worldbuilding.attrMacro": true }
+      flags: { "pokemon-pta3.attrMacro": true }
     });
   }
   game.user.assignHotbarMacro(macro, slot);
